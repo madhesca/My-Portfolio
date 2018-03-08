@@ -15,7 +15,9 @@ while(have_posts()) {
 
 
 	
-
+<div class="menu-icon">
+					<i class="fa fa-bars fa 2-2x"></i>
+				</div>
 <?php }
 
 

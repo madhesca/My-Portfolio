@@ -16,7 +16,6 @@ Version: 1.0
 /* BEM Blocks */
 @import "base/global";
 @import "modules/header";
-@import "modules/main-navigation";
 @import "modules/footer";
 
 

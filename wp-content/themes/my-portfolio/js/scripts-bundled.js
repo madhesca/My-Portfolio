@@ -10328,6 +10328,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -10336,13 +10338,53 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Test = function Test() {
-  _classCallCheck(this, Test);
+var HeaderNavBar = function () {
+  function HeaderNavBar() {
+    _classCallCheck(this, HeaderNavBar);
 
-  console.log('good marton');
-};
+    this.events();
+  }
 
-exports.default = Test;
+  //toggle nav bar
+
+
+  _createClass(HeaderNavBar, [{
+    key: 'events',
+    value: function events() {
+      (0, _jquery2.default)('.menu-icon').on('click', this.toggleIt.bind(this));
+      (0, _jquery2.default)(window).on('scroll', this.scrollIt.bind(this));
+    }
+  }, {
+    key: 'toggleIt',
+    value: function toggleIt() {
+      (0, _jquery2.default)('nav ul').toggleClass('showing');
+    }
+  }, {
+    key: 'scrollIt',
+    value: function scrollIt() {
+
+      if ((0, _jquery2.default)(window).scrollTop()) {
+
+        (0, _jquery2.default)('nav').addClass('black');
+      } else {
+        (0, _jquery2.default)('nav').removeClass('black');
+      }
+    }
+
+    //
+    //$(document).ready(function() {
+    //	$('.menu-icon').on('click', function() {
+    //		$('nav ul').toggleClass('showing');
+    //	});
+    //});
+
+
+  }]);
+
+  return HeaderNavBar;
+}();
+
+exports.default = HeaderNavBar;
 
 /***/ }),
 /* 2 */
@@ -13260,14 +13302,14 @@ var _slickCarousel = __webpack_require__(2);
 
 var _slickCarousel2 = _interopRequireDefault(_slickCarousel);
 
-var _Test = __webpack_require__(1);
+var _HeaderNavbar = __webpack_require__(1);
 
-var _Test2 = _interopRequireDefault(_Test);
+var _HeaderNavbar2 = _interopRequireDefault(_HeaderNavbar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-var test = new _Test2.default();
+var headerNavBar = new _HeaderNavbar2.default();
 
 // Our modules / classes
 // 3rd party packages from NPM

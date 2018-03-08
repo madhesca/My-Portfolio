@@ -720,18 +720,165 @@ template {
 /* BEM Blocks */
 
 
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 
 /* mixins*/
 
 
+/*responsive nav*/
+
+
+/*no overlaping the wp admin bar*/
+
+
+/*.admin-bar .wrapper {
+  top: 32px;
+} */
+
+
+header {
+	
+	width: 100%;
+	height: 100vh;
+	background: url(images/comp.jpeg) no-repeat 50% 50%;
+
+	background-size: cover;
+
+}
+
+
+.content {
+	width: 90%;
+	margin: 4em auto;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+
+.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #b2b2b2;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+
+nav {
+	position: fixed;
+	width: 100%;
+	
+}
+
+
+nav ul {
+	list-style: none;
+	background: rgba(0,0,0,.6);
+	overflow: hidden;
+	color: #BBB;
+	padding: 0 0 0 0;
+	text-align: center;
+	margin: 0;
+	transition: 1s;
+}
+
+
+nav.black ul {
+	background: #191919;
+	
+}
+
+
+nav ul li {
+
+	display: inline-block;
+	padding: 20px 10px 20px 5px;
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	color: #b2b2b2;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+
+.menu-icon {
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #FFF;
+	display: none;
+
+}
+
+
+@media(max-width: 850px) {
+
+	.logo {
+		position: relative;
+		top: 50%;
+		margin-top: -46px;		
+	}
+
+	nav {
+		position: relative;
+	}
+
+	nav ul {
+		width: 100%;
+		max-height: 0px;
+		position: relative;
+		background: #000;
+		padding: 0;
+		
+	}
+
+	nav.black ul {
+		background: #000;
+
+	}
+
+	.showing {
+		max-height: 20em;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.menu-icon {
+		display: block;
+		position: relative;
+
+	}
+
+}
+
+
 /*nav demo*/
 
 
+/*
 .wrapper {
 
 	
@@ -743,52 +890,43 @@ body {
 	background-size: cover;
 	display: table;
 	font-family: 'Roboto' sans-serif;
+
+
+	&__title {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-90%);
+		width: 100%;
+		text-align: center;
+		font-weight: 300;
+		font-size: 2.8rem;
+		color: #BBB; 
+
+		@mixin atMedium {
+			font-size: 3rem;
+
+		}
+	}
+
+	&__subtitle {
+		position: absolute;
+		top: 57%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 100%;
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.1rem;
+		color: #BBB;
+
+		@mixin atMedium {
+			font-size: 1.8rem;
+		}
+	}
 	
 }
 
-
-.wrapper__title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-90%);
-  width: 100%;
-  text-align: center;
-  font-weight: 300;
-  font-size: 2.8rem;
-  color: #BBB;
-}
-
-
-@media(min-width: 980px) {
-
-
-  .wrapper__title {
-    font-size: 3rem;
-  }
-}
-
-
-.wrapper__subtitle {
-  position: absolute;
-  top: 57%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-  font-weight: 300;
-  font-size: 1.1rem;
-  color: #BBB;
-}
-
-
-@media(min-width: 980px) {
-
-
-  .wrapper__subtitle {
-    font-size: 1.8rem;
-  }
-}
 
 
 .nav {
@@ -799,19 +937,16 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 15px;
+	
 
-}
+	@mixin atMedium {
+	position: absolute;
+	transform: translateY(35%);
+	height: 50px;
+	display: inline-block;
 
+	}
 
-@media(min-width: 980px) {
-
-
-  .nav {
-    position: absolute;
-    transform: translateY(35%);
-    height: 50px;
-    display: inline-block;
-  }
 }
 
 
@@ -825,26 +960,25 @@ body {
 	padding: 0 1em;
 	height: 50px;
 
+	@mixin atSmall {
+		line-height: 50px;
+	}
+
+
+	a {
+		margin: 0;
+		padding: 0;
+		color: #BBB;
+		text-decoration: none;
+	}
+
 
 
 }
 
 
-@media(min-width: 530px) {
 
 
-  .logo {
-    line-height: 50px;
-  }
-}
-
-
-.logo a {
-  margin: 0;
-  padding: 0;
-  color: #BBB;
-  text-decoration: none;
-}
 
 
 .menu {
@@ -853,22 +987,15 @@ body {
 	margin: 0 3em;
 	display: none;
 
+	@mixin atMedium {
+		display: block;
+	}
+
 }
-
-
-@media(min-width: 980px) {
-
-
-  .menu {
-    display: block;
-  }
-}
-
 
 .menu ul {
 	list-style: none;
 	}
-
 
 .menu ul li {
 	display: inline-block;
@@ -895,7 +1022,6 @@ body {
 	border-radius: 4px;
 }
 
-
 .menu ul li:nth-child(5) a {
 	color: black;
 	border: 2px solid black;
@@ -903,13 +1029,7 @@ body {
 	border-radius: 4px;
 }
 
-
-/*no overlaping the wp admin bar*/
-
-
-.admin-bar .nav {
-  top: 32px;
-}
+*/
 
 
 .site-footer {

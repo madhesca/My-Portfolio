@@ -3,11 +3,11 @@ import $ from 'jquery';
 import slick from 'slick-carousel';
 
 // Our modules / classes
-import Test from './modules/Test';
+import HeadernavBar from './modules/Header-navbar';
 
 
 
 
 
 // Instantiate a new object using our modules/classes
-var test = new Test();
+var headerNavBar = new HeadernavBar();

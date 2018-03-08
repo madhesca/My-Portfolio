@@ -1,6 +1,8 @@
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 
@@ -11,7 +13,7 @@ body {
 
 
 @define-mixin atSmall {
-	@media(min-width: 530px) {
+	@media(min-width: 580px) {
 		@mixin-content;
 	}
 	
