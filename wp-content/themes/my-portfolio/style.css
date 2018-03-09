@@ -869,3 +869,49 @@ nav ul li a {
 }
 
 
+.headline {
+	color: #000;
+}
+
+
+.headline__title {
+  font-weight: 300;
+  font-size: 2.875rem;
+  text-align: center;
+}
+
+
+.headline__content{
+  line-height: 35px;
+  font-size: 1.2rem;
+}
+
+
+.wrapper {
+	padding: 0 25px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1200px;
+
+}
+
+
+.wrapper--colored {
+  background-color: #BBB;
+}
+
+
+@media(min-width: 580px) {
+
+
+  .wrapper {
+    padding: 0 60px;
+  }
+}
+
+
+.page-section {
+	padding: 4.5rem 0;
+}
+
+

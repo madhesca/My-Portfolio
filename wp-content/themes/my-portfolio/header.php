@@ -12,7 +12,7 @@
 
 
 
-<div class="wrapper">
+<div class="container">
 	<header>
 		<nav>
 			<div class="menu-icon">
