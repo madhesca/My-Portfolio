@@ -3,10 +3,8 @@
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1200px;
+	
 
-	&--colored {
-		background-color: #BBB;
-	}
 
 	@mixin atSmall {
 		padding:  0 60px;

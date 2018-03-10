@@ -20,5 +20,7 @@ Version: 1.0
 @import "modules/headline";
 @import "modules/wrapper";
 @import "modules/page-section";
+@import "modules/row";
+@import "modules/feature";
 
 
