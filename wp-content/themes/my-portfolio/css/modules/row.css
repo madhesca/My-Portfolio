@@ -7,12 +7,27 @@
 
 	&--6 {
 		float: left;
-		width: 50%;
+		width: 100%;
+
+
+
+
+	@mixin atMedium {
+	
+	float: left;
+	width: 50%;
 
 	}
 
+
+
 	&--gutters >div {
 		padding-right: 65px;
+		
+
+	
+
+	}
 
 
 	}

@@ -737,6 +737,11 @@ html, body {
 /* mixins*/
 
 
+.container {
+	z-index: 1;
+}
+
+
 header {
 	
 	width: 100%;
@@ -890,6 +895,7 @@ nav ul li a {
 .headline__content{
   line-height: 35px;
   font-size: 1.2rem;
+  margin-bottom: 80px;
 }
 
 
@@ -898,9 +904,9 @@ nav ul li a {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 42px;
   margin-bottom: 20px;
-  margin: 0 0 10px;
+  margin: 0 0 60px 20px;
 }
 
 
@@ -943,24 +949,44 @@ nav ul li a {
 
 .row--6 {
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
 
-.row--gutters >div {
+@media(min-width: 980px) {
+
+
+  .row--6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+.row--6--gutters >div {
   padding-right: 65px;
 }
 
 
 .feature {
-	padding-left: 40px;
+	
 	position: relative;
+	z-index: -1;
+}
+
+
+@media(min-width: 980px) {
+
+
+  .feature {
+    padding-left: 60px;
+  }
 }
 
 
 .feature__icon {
   position: absolute;
-  left: 0;
+  left: 20;
   font-size: 40px;
   color: #cccccc;
   line-height: 1;
@@ -968,8 +994,8 @@ nav ul li a {
 
 
 .feature__title {
-  margin: 10px 0 20px 0;
-  padding: 0 0 0 20px;
+  margin: 0px 0 21px 20px;
+  padding: 8px 0 0 42px;
   font-size: 1.375rem;
   color: #FF5126;
 }

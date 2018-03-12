@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="wrapper">
 				<div class="row"> <!-- this is for the header of 2 columns -->		
 					<h2 class="headline headline__title">Services</h2>
-					<p class="headline headline__content">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>	
+					<p class="headline headline__content">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>	
 				</div>
 
 				

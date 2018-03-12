@@ -1,12 +1,18 @@
 .feature {
-	padding-left: 40px;
+	
 	position: relative;
+	z-index: -1;
+	
+
+	@mixin atMedium {
+		padding-left: 60px;
+	}
 
 
 
 	&__icon {
 		position: absolute;
-		left: 0;
+		left: 20;
 		font-size: 40px;
 		color: #cccccc;
 		line-height: 1;
@@ -14,8 +20,8 @@
 
 
 	&__title {
-		margin: 10px 0 20px 0;
-		padding: 0 0 0 20px;
+		margin: 0px 0 21px 20px;
+		padding: 8px 0 0 42px;
 		font-size: 1.375rem;
 		color: #FF5126;
 	}
