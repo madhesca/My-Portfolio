@@ -22,5 +22,6 @@ Version: 1.0
 @import "modules/page-section";
 @import "modules/row";
 @import "modules/feature";
+@import "modules/events";
 
 

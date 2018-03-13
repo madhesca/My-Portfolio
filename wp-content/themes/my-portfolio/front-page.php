@@ -5,7 +5,7 @@ get_header(); ?>
 
 <!-- row One -->
 
-<div class="page-section page-section--red">
+<div class="page-section  page-section--gray">
 	<div class="wrapper">
 		<h1 class="headline headline__title">Title here</h1>
 		<p class="headline headline__content">
@@ -125,15 +125,81 @@ get_header(); ?>
 								
 					</div>
 				</div>
-					
-
-					
-
-					
+								
 				
 			</div>
 		</div>
 
+
+		<!-- this here is row three -->
+
+		<div>
+
+		
+			<div class="events">
+				<div class="events-split__one--container">
+   		 	<div class="events-split__one">  <!-- row one here -->
+     
+        <h2 class="events--title">Upcoming Events</h2>
+        
+        <div class="events--summary">
+          <a class="events__date" href="#">
+            <span class="events__month">Mar</span>
+            <span class="events__day">25</span>  
+          </a>
+          <div class="events__content">
+            <h5 class="events-summary__title"><a href="#">Poetry in the 100</a></h5>
+            <p class="events-summary__subtitle">Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="events__learn">Learn more</a></p>
+          </div>
+        </div>
+
+        <div class="events--summary">
+          <a class="events__date" href="#">
+            <span class="events__month">Apr</span>
+            <span class="events__day">02</span>  
+          </a>
+          <div class="events__content">
+            <h5 class="events-summary__title"><a href="#">Quad Picnic Party</a></h5>
+            <p &-summary__title>Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="events__learn">Learn more</a></p>
+          </div>
+        </div>
+         <p class="events__button"><a href="#">View All Events</a></p>
+    </div>
+    </div>
+
+
+
+    <!-- row two here -->
+    <div class="events-split__two">
+      
+        <h2 class="events--title">From Our Blogs</h2>
+
+        <div class="events--summary">
+          <a class="events__date" href="#">
+            <span class="events__month">Jan</span>
+            <span class="events__day">20</span>  
+          </a>
+          <div class="events_content">
+            <h5 class="events-summary__title"><a href="#">We Were Voted Best School</a></h5>
+            <p class="events-summary__subtitle">For the 100th year in a row we are voted #1. <a href="#" class="events__learn">Read more</a></p>
+          </div>
+        </div>
+        <div class="events--summary">
+          <a class="events__date" href="#">
+            <span class="events__month">Feb</span>
+            <span class="events__day">04</span>  
+          </a>
+          <div class="events_content">
+            <h5 class="events-summary__title"><a href="#">Professors in the National Spotlight</a></h5>
+            <p class="events-summary__subtitle">Two of our professors have been in national news lately. <a href="#" class="events__learn">Read more</a></p>
+          </div>
+        </div>
+        
+        <p class="events__button"><a href="#">View All Blog Posts</a></p>
+      </div>
+   
+  </div>
+</div>
 
 
 

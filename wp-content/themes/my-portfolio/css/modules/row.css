@@ -1,6 +1,6 @@
 .row{
 
-
+	
 
 	@mixin clearfix;
 
@@ -8,7 +8,6 @@
 	&--6 {
 		float: left;
 		width: 100%;
-
 
 
 

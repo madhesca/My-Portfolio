@@ -52,3 +52,11 @@ html, body {
 .container {
 	z-index: 1;
 }
+
+
+p {
+	color: black;
+	line-height: 1.65rem;
+	margin: 0 0 1.65em 0;
+	font-size: 1.2rem;
+}
