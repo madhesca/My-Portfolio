@@ -23,5 +23,7 @@ Version: 1.0
 @import "modules/row";
 @import "modules/feature";
 @import "modules/events";
+@import "modules/testimonials";
+@import "modules/faq";
 
 

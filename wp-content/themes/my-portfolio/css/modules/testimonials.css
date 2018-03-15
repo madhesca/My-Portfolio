@@ -1,0 +1,113 @@
+.testimonials {
+	padding-bottom: 0;
+
+	background: #fff5ee;
+
+	&__row {
+		padding-top: 80px;
+
+		@mixin atMedium {
+			float: none;
+			display: flex;
+		}
+		
+	}
+	
+	@mixin atMedium {
+		&__row--gutters  {
+		margin-right: -45px;
+
+	}
+
+	&__row--gutters >div {
+		padding-right: 45px;
+	}
+
+	}
+
+
+
+	@mixin clearfix;
+
+	@mixin atMedium {
+	background: url(images/testimonials-bg.jpg) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 70px;
+	}
+
+	
+
+	&__row--4 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		float: none;
+		display: flex;
+		
+
+
+		@mixin atMedium {
+		width: 33.33%;
+	}
+		
+	}
+
+	
+
+	&__each {
+		background: rgba(255, 255, 255, .5);
+		padding: 0 1.8rem 1px 1.8rem;
+		margin: 0 0 50px 0;
+
+		&--last {
+			margin-bottom: 0;
+
+			@mixin atSmall {
+				margin-bottom: 50px;
+			}
+		}
+		
+	}
+
+	&__photo {
+		position: relative;
+		top: -80px;
+		border-radius: 80px;
+		overflow: hidden;
+		height: 160px;
+		width: 160px;
+		margin: 80px auto -80px auto;
+		border: 6px solid rgba(255, 255, 255, .5);
+
+		@mixin atMedium {
+			margin: 0 auto -80px auto;
+		}
+
+	}
+
+	&__heading {
+		font-weight: 300;
+		font-size: 3.05rem;
+		text-align: center;
+		margin-bottom: 0;
+
+		@mixin atSmall {
+			margin-bottom: 35px;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 1.5rem;
+		margin: 5px 0 0 0;
+		font-weight: 400;
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin: 10px 0 18px 0;
+		font-weight: 500;
+		color: orange;
+	}
+}
+

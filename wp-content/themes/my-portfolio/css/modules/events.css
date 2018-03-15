@@ -21,7 +21,7 @@
       margin: 0;
       width: 50%;
       height: 500px;
-      padding: 0;
+      padding: 0 20px 0 0;
     }
 
 	}
@@ -30,14 +30,14 @@
 		width: 100%;
 		float: left;
     margin: 0;
-     padding: 0 20px 0 0;
+    padding: 0 20px 0 0;
     background: #FAF0CA;
     height: 600px;
    
 
      @mixin atMedium {
     width: 50%;
-    padding: 0;
+    padding: 0 20px 0 0;
     height: 500px;
    }
 		
@@ -47,6 +47,7 @@
 
 	&--summary {
 
+  z-index: 1;
 	position: relative;
 	@mixin clearfix;
   padding-left: 107px;
@@ -58,11 +59,11 @@
 
 	}
 
-	
 
 	
 
 	&--title {
+    
 		text-align: center;
 		padding: 25px 0 20px 0;
     font-weight: 400;
@@ -106,11 +107,13 @@
   }
 
   &-summary__title {
+
     margin-bottom: 10px;
   }
 
   &-summary__subtitle {
     font-size: 1.11rem;
+
   }
 
   &-summary__title a {

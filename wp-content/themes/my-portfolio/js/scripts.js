@@ -4,6 +4,7 @@ import slick from 'slick-carousel';
 
 // Our modules / classes
 import HeadernavBar from './modules/Header-navbar';
+import Faq from './modules/Faq';
 
 
 
@@ -11,3 +12,8 @@ import HeadernavBar from './modules/Header-navbar';
 
 // Instantiate a new object using our modules/classes
 var headerNavBar = new HeadernavBar();
+var faq = new Faq();
+
+
+
+

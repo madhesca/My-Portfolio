@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10325,6 +10325,89 @@ return jQuery;
 
 
 Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Faq = function () {
+	function Faq() {
+		_classCallCheck(this, Faq);
+
+		this.top = (0, _jquery2.default)('.faq--each');
+		this.icon = (0, _jquery2.default)('.faq--icon');
+		this.events();
+	}
+
+	_createClass(Faq, [{
+		key: 'events',
+		value: function events() {
+			this.top.find('.faq--content').hide();
+			this.top.find('.faq--heading').on('click', this.showPar);
+		}
+
+		//methods
+
+
+	}, {
+		key: 'showPar',
+		value: function showPar() {
+
+			(0, _jquery2.default)(this).next(".faq--content").slideToggle();
+			(0, _jquery2.default)(this).next(".faq--content").siblings(".faq--content:visible").slideUp();
+			(0, _jquery2.default)(this).toggleClass('faq--heading--active');
+
+			(0, _jquery2.default)(this).find('.faq--icon').toggleClass('faq--icon--active');
+		}
+	}]);
+
+	return Faq;
+}();
+
+exports.default = Faq;
+
+/*
+
+var accordion = function() {
+
+		$('.gtco-accordion-heading').on('click', function(event){
+
+			var $this = $(this);
+
+			$this.closest('.gtco-accordion').find('.gtco-accordion-content').slideToggle(400, 'easeInOutExpo');
+			
+			if ($this.closest('.gtco-accordion').hasClass('active')) {
+
+				$this.closest('.gtco-accordion').removeClass('active');
+
+
+			} else {
+
+				$this.closest('.gtco-accordion').addClass('active');
+			}
+			
+			event.preventDefault();
+		});
+	};
+
+*/
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -10387,7 +10470,7 @@ var HeaderNavBar = function () {
 exports.default = HeaderNavBar;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -13288,7 +13371,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13298,21 +13381,27 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _slickCarousel = __webpack_require__(2);
+var _slickCarousel = __webpack_require__(3);
 
 var _slickCarousel2 = _interopRequireDefault(_slickCarousel);
 
-var _HeaderNavbar = __webpack_require__(1);
+var _HeaderNavbar = __webpack_require__(2);
 
 var _HeaderNavbar2 = _interopRequireDefault(_HeaderNavbar);
+
+var _Faq = __webpack_require__(1);
+
+var _Faq2 = _interopRequireDefault(_Faq);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Instantiate a new object using our modules/classes
-var headerNavBar = new _HeaderNavbar2.default();
+
 
 // Our modules / classes
 // 3rd party packages from NPM
+var headerNavBar = new _HeaderNavbar2.default();
+var faq = new _Faq2.default();
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,157 @@
+.faq{
+
+	margin-top: 0;
+	padding-top: 0;
+
+	@mixin atSmall {
+		padding: 4.5rem 0;
+	}
+
+	&--title {
+		text-align: center;
+
+		padding-bottom: 45px;
+	}
+
+
+	&--wrapper {
+		padding: 10px 10px;
+	}
+
+	&--each{
+		padding-bottom: 20px;
+	}
+
+	background: #EFEFEF;
+
+
+	&--6 {
+		
+		width: 100%;
+		float: left;
+		padding: 0;
+		margin: 0;
+
+		@mixin atSmall {
+			width: 50%;
+		}
+
+	}
+
+
+	
+
+
+.faq--content{
+		background: #FFF;
+		display: block;
+		padding: 16px 16px;
+		line-height: 2px;
+		
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 25px;
+			color: #7F7F7F;
+		}
+
+	}
+
+
+
+
+
+
+	&--heading {
+		background: #FFF;
+		padding: 16px 16px;
+		margin-left: 0;
+		position: relative;
+		border-bottom: 1px solid #EFEFEF;
+		cursor: pointer;
+
+		
+	}
+
+	
+
+
+	&--heading h3 {
+		
+		font-size: 18px;
+		margin: 0;
+		font-weight: 600;
+
+	}
+
+	&--icon {
+		font-size: 22px;
+		font-weight: lighter;
+		display: inline-block;
+		position: absolute;
+		top: 8;
+		left: 92%;
+		color: #868686;
+		transition: 1s;
+
+		webkit-transform: rotate(0deg);
+		  -moz-transform: rotate(0deg);
+		  -ms-transform: rotate(0deg);
+		  transform: rotate(0deg);
+
+
+	}
+
+
+
+
+	
+
+
+
+
+
+
+
+	@mixin atMedium {
+		&--row--gutters  {
+		margin-right: -25px;
+
+	}
+
+	&--row--gutters >div {
+		padding-right: 25px;
+	}
+
+	}
+
+
+&--content {
+	visibility: visible;
+
+}
+
+
+}
+
+
+
+.faq--heading--active {
+		color: #FF5126;
+	
+	}
+
+
+.faq--icon--active {
+
+		-webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+
+		
+	}

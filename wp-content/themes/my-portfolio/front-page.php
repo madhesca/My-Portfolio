@@ -202,6 +202,168 @@ get_header(); ?>
 </div>
 
 
+<!--TESTIMONIALS -->
+
+<div class="testimonials page-section">
+    
+    <div class="wrapper wrapper__testimonials">
+	    <h2 class="testimonials__heading">Real <strong>Testimonials</strong></h2>
+
+	    <div class="testimonials__row testimonials__row--gutters">
+	    	<div class="testimonials__row--4">
+
+	    		<div class="testimonials__each">
+	    			<div class="testimonials__photo">
+	    				<img src="<?php echo get_theme_file_uri('images/syche.jpg') ?>">
+	    			</div>
+				    <h3 class="testimonials__title">Syche Ochavillo</h3>
+				    <h4 class="testimonials__subtitle">9 Time Escaper</h4>
+				    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+	    		</div>
+	    		
+	    	</div>
+
+	    	<div class="testimonials__row--4">
+	    		<div class="testimonials__each">
+	    			<div class="testimonials__photo">
+		    			<img src="<?php echo get_theme_file_uri('images/marton.jpg') ?>">
+		    		</div>
+				    <h3 class="testimonials__title">Marton Ochavillo</h3>
+				    <h3 class="testimonials__subtitle">4 Time Escaper</h3>
+				    <p>&ldquo;Duis aute irure dolor in lorem lorem lorem reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+			    </div>
+	    	</div>
+
+	    	<div class="testimonials__row--4">
+	    		<div class="testimonials__each testimonials__each--last">
+		    		<div class="testimonials__photo">
+		    			<img src="<?php echo get_theme_file_uri('images/xander.jpg') ?>">
+		    		</div>	
+				    <h3 class="testimonials__title">Xander Ochavillo</h3>
+				    <h3 class="testimonials__subtitle">6 Time Escaper</h3>
+				    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+			    </div>
+	    	</div>
+
+	    </div>
+
+	    
+
+	    
+
+	    
+    </div>
+  </div>
+
+
+
+<!--FREQUENTLY ASK QUESTIONS -->
+
+<div class="faq page-section jsOff">
+			<div class="wrapper faq--wrapper">
+				
+					<div class="faq--title">
+						<h2>Frequently Ask Questions</h2>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					</div>
+				
+
+				<div class="faq--row--gutters">
+					<div class="faq--6">
+
+
+
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>What is Asymmetry?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								
+							</div>
+						</div>
+
+
+
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>I have technical problem, who do I email?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								
+							</div>
+						</div>
+
+
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>How do I use Asymmetry features?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="faq--6">
+
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>What language are available?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								
+							</div>
+						</div>
+
+
+
+
+
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>Can I have a username that is already taken?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								
+							</div>
+						</div>
+						<div class="faq--each">
+							<div class="faq--heading">
+								<div class="faq--icon"><i class="fa fa-plus"></i></div>
+								<h3>Is Asymmetry free?</h3>
+							</div>
+							<div class="faq--content">
+								
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
 
  <?php get_footer();
 
